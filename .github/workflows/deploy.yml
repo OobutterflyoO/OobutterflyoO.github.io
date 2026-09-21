@@ -1,0 +1,17 @@
+name: Deploy Website
+on:
+  push:
+    branches:
+      - main
+jobs:
+  ftp-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Code auschecken
+        uses: actions/checkout@v3
+      - name: Auf Server hochladen
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: plesk-01-ftp.cit-vip.th-koeln.de{{ secrets.FTP_SERVER }}
+          username: was2_ftp{{ secrets.FTP_USERNAME }}
+          password: i4@4k6Wf3{{ secrets.FTP_PASSWORD }}
