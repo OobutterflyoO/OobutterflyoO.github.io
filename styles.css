@@ -60,3 +60,8 @@ h1 { font-size: clamp(54px, 8vw, 108px); line-height: .92; margin-bottom: 28px; 
 @media (max-width: 700px) { .page-content .briefwahl-copy { margin-top: -5px; } }
 @media (max-width: 700px) { .candidate-content { padding-top: 40px; }.candidate-columns { margin-top: 42px; }.support-grid { grid-template-columns: 1fr; }.self-presentation { padding: 25px; }.voter-content { padding-top: 40px; }.voter-election, .voter-briefwahl { padding: 25px; }.voter-section { margin-top: 48px; padding-top: 34px; } }
 @media (max-width: 700px) { .helper-content { padding-top: 40px; }.helper-columns { margin-top: 42px; }.helper-role-grid { grid-template-columns: 1fr; }.helper-pay { padding: 25px; } }
+
+.result-links > a { grid-template-columns: 50px 1fr 25px; min-height: 92px; padding: 14px 0; }
+.result-links > a:first-child { border-top: 1px solid var(--line); }
+.result-links .resource-icon { height: 30px; width: 38px; }
+.result-links strong { font-size: 16px; }
